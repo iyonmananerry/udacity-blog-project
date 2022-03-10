@@ -1,0 +1,152 @@
+@import url(footer.css);
+@import url(blogpostsection.css);
+@import url(aboutsection.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Nunito+Sans:ital,wght@0,300;0,400;1,300&family=Red+Hat+Display:ital@0;1&family=Roboto:wght@300&family=Sofia&family=Sora&family=Zen+Kaku+Gothic+Antique&display=swap');
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+nav{
+    background-color:#010f17;
+    height:80px;
+    width:100%;
+    position:fixed;
+}
+nav ul{
+    float:right;
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin:0 50px;
+    justify-content: center;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 17px;
+    text-transform:capitalize;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+nav ul li a:hover{
+    color: #023352;
+}
+
+.logo a{
+    color:#fff;
+    font-size: 17px;
+    padding: 0 10px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    
+}
+.logo{
+    padding-top: 30px;
+    display:inline;
+    float: left;
+
+}
+header{
+    width: 100%;
+    height:100vh;
+    opacity: initial;
+    background-image: url(images/couplesinlove.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+}
+header h1{
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    padding-top: 250px;
+    padding-left: 20px;
+}
+header p{
+    text-align:center;
+    color: #fff;
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-left: 20px;
+    
+}
+/* buttons styling */
+
+.btn{
+    background-color: #023352;
+    cursor: pointer;
+    padding: 10px 18px;
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    text-align: center;
+    margin:auto;
+    margin-top: 100px;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 50px;
+    justify-items: center;
+    transition: 0.3s ease-in-out;
+
+
+  }
+  .first-post a{
+      text-decoration: none;
+  }
+  .second-post a{
+      text-decoration: none;
+  }
+  .third-post a{
+      text-decoration: none;
+  }
+  .fourth-post a{
+      text-decoration: none;
+  }
+  .btn:hover{
+      background-color: #fff;
+      color: #023352;;
+  }
+
+/* media queries */
+@media screen and (max-width:760px){
+    nav{
+        text-align: center;
+        display:flex;
+        
+    }
+    nav ul{
+        flex-direction: column;
+        text-align:end;
+       
+    }
+    nav li{
+        display: flex;
+        flex-direction: column;
+        text-align:end;
+        
+        
+    }
+    nav ul li a{
+        flex-direction: column;
+        display: flex;
+        text-align:end;
+        
+        
+    }
+    header{
+        width:100%;
+    }
+}
