@@ -1,6 +1,6 @@
 @import url(footer.css);
 @import url(blogpostsection.css);
-@import url(aboutsection.css);
+@import url(../css\ files/aboutsection.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Nunito+Sans:ital,wght@0,300;0,400;1,300&family=Red+Hat+Display:ital@0;1&family=Roboto:wght@300&family=Sofia&family=Sora&family=Zen+Kaku+Gothic+Antique&display=swap');
 
 
@@ -109,16 +109,23 @@ header p{
  .post-text a{
      text-decoration: none;
  }
+ 
 
 /* media queries */
 @media screen and (max-width:760px){
     .post-container{
         display: flex;
         flex-direction: column;
-        width:100%;
+    
     }
             nav ul{
                 height: 250px;
                 flex-direction: column;
+            }
+            header h1{
+                font-size: 14px;
+            }
+            header p{
+                font-size: 12px;
             }
  }
