@@ -2,8 +2,7 @@
 @import url(blogpostsection.css);
 @import url(aboutsection.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Nunito+Sans:ital,wght@0,300;0,400;1,300&family=Red+Hat+Display:ital@0;1&family=Roboto:wght@300&family=Sofia&family=Sora&family=Zen+Kaku+Gothic+Antique&display=swap');
-
-
+@import url(../bloghomepage/footer.css);
 *{
     margin: 0;
     padding:0;
@@ -11,6 +10,18 @@
 }
 body{
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.container div{
+    padding:30px;
+}
+.card img{
+    width: 100%;
+    height: auto;
 }
 nav{
     background-color:#010f17;
@@ -37,6 +48,9 @@ nav ul li a:hover{
     color: #023352;
     transition: 0.3s ease-in all;
 }
+.logo{
+    color: #fff;
+}
 
 header h1{
     align-items: center;
@@ -55,6 +69,7 @@ header p{
     padding-left: 20px;
     
 }
+
 /* buttons styling */
 
 .btn{
@@ -76,49 +91,32 @@ header p{
 
 
   }
-  
- /* blog post */
- .post-container{
-     display: flex;
-     justify-content: center;
-     flex-wrap: wrap;
- }
- .post-box{
-     width:400px;
-     background-color: #fff;
-     border: 2px solid #cfdfe9;
-     box-shadow:2px 2px 2px #023352;
-     margin:20px;
- }
+  .first-post a{
+      text-decoration: none;
+  }
+  .second-post a{
+      text-decoration: none;
+  }
+  .third-post a{
+      text-decoration: none;
+  }
+  .fourth-post a{
+      text-decoration: none;
+  }
+  .btn:hover{
+      background-color: #fff;
+      color: #023352;;
+  }
 
- .post-img img{
-     width:100%;
-     height:100%;
-     object-fit: cover;
-     object-position: center;
- }
- .post-text{
-     padding:30px;
-     display: flex;
-     flex-direction: column;
- }
- .post-text h3{
-     font-size: 15px;
- }
- 
- .post-text a{
-     text-decoration: none;
- }
 
 /* media queries */
 @media screen and (max-width:760px){
-    .post-container{
-        display: flex;
+   .container{
+       display: flex;
+       flex-direction: column;
+   }
+    nav ul{
+        height: 250px;
         flex-direction: column;
-        width:100%;
     }
-            nav ul{
-                height: 250px;
-                flex-direction: column;
-            }
- }
+}

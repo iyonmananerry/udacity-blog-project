@@ -1,4 +1,4 @@
-.container2{
+.container{
     width:100%;
     margin:0 auto;
     padding: 50px;
@@ -26,8 +26,8 @@
 }
 
 @media screen and (max-width:760px){
-    .container2{
-        padding-top: 1400px;
+    .container{
+        padding-top: 4px;
         flex-direction: row;
     }
     .card{
