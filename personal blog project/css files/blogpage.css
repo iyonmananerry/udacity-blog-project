@@ -172,6 +172,20 @@ header p{
   
   
 /* media queries */
+@media(min-width:576px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+     nav ul{
+         height: 250px;
+         flex-direction: column;
+     }
+     .grid-container{
+         display: flex;
+         flex-direction: column;
+     }
+}
 @media screen and (max-width:760px){
    .container{
        display: flex;
@@ -185,4 +199,46 @@ header p{
         display: flex;
         flex-direction: column;
     }
+}
+@media(min-width:992px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+     nav ul{
+         height: 250px;
+         flex-direction: row;
+     }
+     .grid-container{
+         display: flex;
+         flex-direction: row;
+     }
+}
+@media(min-width:1200px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+     nav ul{
+         height: 250px;
+         flex-direction: row;
+     }
+     .grid-container{
+         display: flex;
+         flex-direction: row;
+     }
+}
+@media(min-width:1400px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+     nav ul{
+         height: 250px;
+         flex-direction: row;
+     }
+     .grid-container{
+         display: flex;
+         flex-direction: row;
+     }
 }

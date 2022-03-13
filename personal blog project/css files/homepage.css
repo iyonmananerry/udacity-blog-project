@@ -112,6 +112,24 @@ header p{
  
 
 /* media queries */
+@media(min-width:576px){
+    .post-container{
+        display: flex;
+        flex-direction: column;
+    
+    }
+            nav ul{
+                height: 250px;
+                flex-direction: column;
+            }
+            header h1{
+                font-size: 14px;
+            }
+            header p{
+                font-size: 12px;
+            }
+ }
+
 @media screen and (max-width:760px){
     .post-container{
         display: flex;
@@ -129,3 +147,55 @@ header p{
                 font-size: 12px;
             }
  }
+ @media(min-width:992px){
+    .post-container{
+        display: flex;
+        flex-direction: column;
+    
+    }
+            nav ul{
+                height: 250px;
+                flex-direction: column;
+            }
+            header h1{
+                font-size: 14px;
+            }
+            header p{
+                font-size: 12px;
+            }
+ }
+ @media(min-width:1200px){
+    .post-container{
+        display: flex;
+        flex-direction: row;
+    
+    }
+            nav ul{
+                height: 250px;
+                flex-direction: row;
+            }
+            header h1{
+                font-size: 14px;
+            }
+            header p{
+                font-size: 12px;
+            }
+ }
+ @media(min-width:1400px){
+    .post-container{
+        display: flex;
+        flex-direction: row;
+    
+    }
+            nav ul{
+                height: 250px;
+                flex-direction: row;
+            }
+            header h1{
+                font-size: 14px;
+            }
+            header p{
+                font-size: 12px;
+            }
+ }
+ 
